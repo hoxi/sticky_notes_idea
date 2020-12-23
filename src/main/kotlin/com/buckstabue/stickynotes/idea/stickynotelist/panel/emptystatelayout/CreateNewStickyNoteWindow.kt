@@ -8,11 +8,7 @@ class CreateNewStickyNoteWindow(
     private val createStickyNoteScenario: CreateStickyNoteScenario
 ) {
     lateinit var content: JPanel
-    private lateinit var addNewStickyNoteLink: JHyperlink
 
     init {
-        addNewStickyNoteLink.setOnLinkClickListener {
-            createStickyNoteScenario.launch()
-        }
     }
 }

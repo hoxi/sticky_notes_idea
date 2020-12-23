@@ -57,7 +57,7 @@ fun <ITEM_TYPE : Any> JList<ITEM_TYPE>.setContextMenu(actionGroup: ActionGroup) 
 }
 
 fun JLabel.setWrappedText(text: String) {
-    this.text = "<HTML>${StringEscapeUtils.escapeHtml(text)}</HTML>"
+    this.text = "<html>${StringEscapeUtils.escapeHtml(text)}</html>"
 }
 
 fun JList<*>.fullyClearSelection() {

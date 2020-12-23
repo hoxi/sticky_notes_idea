@@ -35,7 +35,6 @@ class ActiveNoteWindow(
     private lateinit var activeNote: JLabel
     private lateinit var openActiveStickyNoteButton: JButton
     private lateinit var emptyStatePanel: JPanel
-    private lateinit var addNewStickyNoteLink: JHyperlink
     private lateinit var doneButton: JButton
 
     override val routingTag: String = "ActiveStickyNote"
@@ -59,6 +58,7 @@ class ActiveNoteWindow(
         doneButton.disableIdeaLookAndFeel()
         doneButton.icon = IconLoader.getIcon("/done.svg")
         doneButton.pressedIcon = IconLoader.getIcon("/done_pressed.svg")
+        doneButton.setSize(10,10);
 
         doneButton.addActionListener {
             presenter.onDoneClick()
@@ -70,13 +70,6 @@ class ActiveNoteWindow(
         openActiveStickyNoteButton.pressedIcon = IconLoader.getIcon("/pin_pressed.svg")
         openActiveStickyNoteButton.addActionListener {
             presenter.onOpenActiveStickyNoteButtonClick()
-        }
-
-        addNewStickyNoteLink.linkTextColor = Color.BLUE.darker()
-        addNewStickyNoteLink.hoverLinkTextColor = Color.decode("#0700FC")
-        addNewStickyNoteLink.setOnLinkClickListener {
-            analytics.createStickyNoteLinkClick()
-            showCreateStickyNoteDialog()
         }
     }
 

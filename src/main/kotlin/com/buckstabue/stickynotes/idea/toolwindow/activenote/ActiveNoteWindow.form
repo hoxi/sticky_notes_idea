@@ -6,7 +6,7 @@
       <xy x="20" y="20" width="500" height="400"/>
     </constraints>
     <properties>
-      <background color="-857995"/>
+      <background color="-13749184"/>
       <font/>
     </properties>
     <border type="none"/>
@@ -76,14 +76,17 @@
             <children>
               <component id="e888b" class="javax.swing.JLabel" binding="activeNote">
                 <constraints>
-                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-16777216"/>
                   <enabled value="true"/>
-                  <font size="24"/>
-                  <foreground color="-16777216"/>
+                  <font size="12"/>
+                  <foreground color="-9658176"/>
+                  <horizontalTextPosition value="2"/>
                   <text value=""/>
+                  <verticalAlignment value="1"/>
+                  <verticalTextPosition value="1"/>
                 </properties>
               </component>
               <component id="7cae" class="javax.swing.JButton" binding="openActiveStickyNoteButton">
@@ -100,7 +103,7 @@
               </component>
             </children>
           </grid>
-          <grid id="de2e5" binding="emptyStatePanel" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+          <grid id="de2e5" binding="emptyStatePanel" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
@@ -116,26 +119,17 @@
                 </constraints>
                 <properties>
                   <background color="-12517368"/>
-                  <font size="24"/>
-                  <foreground color="-16777216"/>
+                  <font size="12"/>
+                  <foreground color="-4342339"/>
                   <opaque value="false"/>
                   <text value="No Sticky Notes added."/>
                 </properties>
               </component>
               <vspacer id="c307e">
                 <constraints>
-                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
                 </constraints>
               </vspacer>
-              <component id="26fd3" class="com.buckstabue.stickynotes.idea.customcomponent.JHyperlink" binding="addNewStickyNoteLink">
-                <constraints>
-                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <font size="20"/>
-                  <linkText value="Create new Sticky Note"/>
-                </properties>
-              </component>
               <vspacer id="bdc0a">
                 <constraints>
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
