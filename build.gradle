@@ -13,7 +13,7 @@ if (propertiesFile.exists()) {
 }
 
 group 'com.buckstabue'
-version '2.0'
+version '2.1'
 
 sourceCompatibility = 1.8
 
@@ -40,7 +40,7 @@ dependencies {
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-    version '201.8743.12'
+    version '211.6693.111'
     plugins 'git4idea'
     updateSinceUntilBuild false
 }
